@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <display-name>AntiRagging</display-name>
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>loginservlet</servlet-name>
+        <servlet-class>loginservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginservlet</servlet-name>
+        <url-pattern>/loginservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>view_pending</servlet-name>
+        <servlet-class>view_pending</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>view_pending</servlet-name>
+        <url-pattern>/view_pending</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>update_status</servlet-name>
+        <servlet-class>update_status</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>update_status</servlet-name>
+        <url-pattern>/update_status</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>home.html</welcome-file>
+        <welcome-file>homeadmin.html</welcome-file>
+        <welcome-file>aboutus.html</welcome-file>
+        <welcome-file>updatestatus.html</welcome-file>
+        <welcome-file>login.html</welcome-file>
+        <welcome-file>checkstatus.html</welcome-file>
+        <welcome-file>checkstatus.jsp</welcome-file>
+        <welcome-file>pendingrequest.html</welcome-file>
+        
+    </welcome-file-list>
+</web-app>
